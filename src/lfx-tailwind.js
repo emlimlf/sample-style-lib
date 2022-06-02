@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        // @Asitha - I'm thinking of ditching the relative sizing and just stick with PX
         xs: ['10px', { lineHeight: '12px' }], // 10
         base: ['13px', { lineHeight: '16px' }], // 13
         lg: ['18px', { lineHeight: '20px' }], // 18
@@ -30,7 +29,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     plugin(function ({ addBase, config }) {
-      // @Asitha, not sure if this is the correct approach in applying a global theme
       addBase({
         'div, p, input, h1, h2, h3, h4, h5, h6, span, label': {
           fontFamily: config('theme.fontFamily.sans').join(', '),

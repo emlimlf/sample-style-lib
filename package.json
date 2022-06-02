@@ -1,4 +1,6 @@
 {
+  "name": "lfx-sample-style-lib",
+  "version": "1.0.0",
   "scripts": {
     "build:css": "postcss src/style.scss -o static/dist/lfx-main.css",
     "postcss:watch": "postcss src/style.scss --use postcss-import -o static/dist/lfx-main.css --watch"
