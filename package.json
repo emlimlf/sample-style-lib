@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build:css": "postcss src/style.scss -o static/dist/lfx-main.css",
+    "postcss:watch": "postcss src/style.scss --use postcss-import -o static/dist/lfx-main.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.2"
+  }
+}
